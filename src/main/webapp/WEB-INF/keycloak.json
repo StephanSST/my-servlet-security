@@ -1,0 +1,16 @@
+{
+  "auth-server-url" : "${baloise.keycloak.realm.url}",
+  "ssl-required" : "EXTERNAL",
+  "realm" : "Baloise",
+  "resource" : "baloise-sst-test",
+
+  "principal-attribute" : "preferred_username",
+  "verify-token-audience" : false,
+  "use-resource-role-mappings" : false,
+  "bearer-only" : false,
+  
+  "credentials" : {
+      "secret" : "${env.clientsecret_sst_test}"
+   }
+
+}
